@@ -3,10 +3,15 @@
 Answer these on your own, then compare answers as a group
 
 1.  What is state?
+      The initial value of a variable, in an object
+      An object where we can store data within our component. Ths data is kept in memory and doesn't persist (it won't continue after component unMounts).
 
 2.  Where do you set initial state?
+      Constructor
+      In the constructor of the component
 
 3.  What method do you use to update state?
+      this.setState()
 
 ### Understand
 

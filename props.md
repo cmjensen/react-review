@@ -3,14 +3,36 @@
 Answer these on your own, then compare answers as a group
 
 1.  What are props?
+      Props is an object that can be passed from one component to another (parent component to child component)
 
 2.  How do you pass props from a parent to a child?
+      Name prop in parent element <Movie propName={propValue} />
+      ```JSX
+        <ChildComponent propName={propValue}/>
+      ```
 
 3.  How do you access props from a class-based child component?
+      {this.props.propName}
+      ```JSX
+        {this.props.propName}
+      ```
 
 4.  How do you access props from a functional component?
+      props as function param, then {props.myName}
+      ```JS
+      function ChildComponent(props){
+        return <div>
+          {props.propName}
+          </div>
+      }
 
 5.  How do you bind a function to a parent component so that it can be passed to a child?
+      this.state.stuff = this.state.stuff.bind(this)
+      arrow functions to get around this
+      ```JS
+        this.funcName = this.funcName.bind(this)
+      ```
+      ^put in the constructor
 
 ### Understand
 
@@ -58,6 +80,8 @@ class Queue extends Component {
 Try these on your own, but work together if you start to get stuck.
 
 7.  Using the `Queue` component above, create a `Student` component that can add a question as a string and a `Mentor` component that can remove a question from the array.
+
+
 
 ### Analyze, Evaluate, Create
 
